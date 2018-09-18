@@ -127,7 +127,7 @@
         // -----------------------------
         //  Extra customization
         // -----------------------------
-        $('#submit').click(function(event) {
+        $('#contact').submit(function(event) {
             event.preventDefault();
             $.ajax({
                 method: "POST",
