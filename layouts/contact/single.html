@@ -1,0 +1,113 @@
+{{ partial "header-with-nav.html" . }}
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>Contact Us</h1>
+				<!-- Page Description -->
+				<p>Ready to work with us? Share your project challenges by <a href="mailto:hello@automatedascent.com">sending us an email</a> or simply filling out the form below. We will contact you shortly and set up a time to chat.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+
+<!--=====================================
+=            Address and Map            =
+======================================-->
+
+<section class="address section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 align-self-center m-auto">
+				<div class="block">
+					<div class="address-block text-center">
+						<div class="icon">
+							<i class="tf-map2"></i>
+						</div>
+						<div class="details">
+							<h3>Denver, Colorado, USA</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 align-self-center m-auto">
+				<div class="block">
+					<div class="address-block text-center">
+						<div class="icon">
+							<i class="tf-ion-ios-email-outline"></i>
+						</div>
+						<div class="details">
+							<a href="mailto:hello@automatedascent.com"><h3>hello@automatedascent.com</h3></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 align-self-center m-auto">
+				<div class="block">
+					<div class="address-block text-center">
+						<div class="icon">
+							<i class="tf-linkedin"></i>
+						</div>
+						<div class="details">
+							<a href="https://www.linkedin.com/company/automatedascent/" target="_blank"><h3>automatedascent</h3></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Address and Map  ====-->
+
+<section class="contact-form section">
+	<div class="container">
+		<div class="row">
+			<div class="col-11 m-auto">
+				<form id="contact">
+					<div class="row">
+						<!-- Name -->
+						<div class="col-md-6">
+							<input class="form-control main" type="text" id="name" placeholder="Name" required>
+						</div>
+						<!-- Email -->
+						<div class="col-md-6">
+							<input class="form-control main" type="email" id="email" placeholder="Your Email Address" required>
+						</div>
+						<!-- Message -->
+						<div class="col-md-12">
+							<textarea class="form-control main" id="message" rows="10" placeholder="Your Message"></textarea>
+						</div>
+						<!-- Submit Button -->
+						<div class="col-12 text-right">
+							<button class="btn btn-main-md">Submit</button>
+						</div>
+					</div>
+				</form>
+                <div class="alert alert-success" id="contact-success" style="display:none;">
+                    <h4 class="alert-heading">Great!</h4>
+                    <p>We received your details and will be in touch shortly.</p>
+                </div>
+                <div class="alert alert-danger" id="contact-error" style="display:none;">
+                    <h4 class="alert-heading">Something went wrong!</h4>
+                    <p>Please send us an email instead.</p>
+                </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--============================
+=            Footer            =
+=============================-->
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,107 @@
+{{ partial "header-with-nav.html" . }}
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>About Us</h1>
+				<!-- Page Description -->
+				<p>Automated Ascent is a boutique technology consultancy that delivers software solutions to help our customers succeed. We specialize in the areas of project automation, containers and Continous Delivery. Through our unique mentoring methodology, we will train and guide your team on the best practices for building flexible and efficient software.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+<!--==================================
+=            Feature Team            =
+===================================-->
+
+<section class="founders section bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto align-self-center">
+                <!-- Featured Member -->
+                <div class="founder">
+                    <!-- Member Image -->
+                    <!-- Name -->
+                    <h1>Benjamin Muschko</h1>
+                    <!-- position -->
+                    <cite>Founder</cite>
+                    <!-- Description -->
+                    <p>Benjamin Muschko is a software engineer on the JVM, consultant and trainer with over 15 years of experience in the industry. He’s passionate about project automation, testing and Continuous Delivery. Ben is the author of <i><a href="#books" class="scrollTo">Gradle in Action,</a></i> published by Manning Publications, is a frequent speaker at conferences and is an avid Open Source advocate.</p>
+                    <!-- Social Sites -->
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item"><a href="https://twitter.com/bmuschko/" target="_blank"><i class="tf-ion-social-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/bmuschko/" target="_blank"><i class="tf-ion-social-github"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/benjaminmuschko/" target="_blank"><i class="tf-ion-social-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://bmuschko.com/" target="_blank"><i class="tf-ion-social-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 mr-auto justify-content-center">
+                <!-- Feature mockup -->
+                <div class="image-content">
+                    <div class="founder">
+                        <img class="img-fluid" src="{{ "images/about/ben-profile.jpg" | absURL }}" alt="featured-member">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a id="books"></a>
+<section class="feature section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 ml-auto justify-content-center">
+				<!-- Feature Mockup -->
+				<div class="image-content">
+					<a href="https://www.amazon.com/Gradle-Action-Benjamin-Muschko/dp/1617291307/" target="_blank"><img class="img-fluid" src="{{ "images/about/gradle-in-action.jpg" | absURL }}" alt="Gradle in Action"></a>
+				</div>
+			</div>
+			<div class="col-lg-6 mr-auto align-self-center">
+				<div class="feature-content">
+					<!-- Feature Title -->
+					<h2>Gradle in Action</h2>
+					<!-- Feature Description -->
+					<p class="desc"><i>Gradle in Action</i> is a comprehensive guide to end-to-end project automation with Gradle. Starting with the basics, this practical, easy-to-read book discusses how to build a full-fledged, real-world project. Along the way, it touches on advanced topics like testing, continuous integration, and monitoring code quality. You'll also explore tasks like setting up your target environment and deploying your software.</p>
+				</div>
+				<!-- Testimonial Quote -->
+				<div class="testimonial">
+					<p>
+						"The best Gradle reference ever! Full of real-world examples."
+					</p>
+					<ul class="list-inline meta">
+						<li class="list-inline-item">Wellington R. Pinheiro, Walmart eCommerce Brazil</li>
+					</ul>
+				</div>
+				<div class="testimonial">
+					<p>
+						"The missing book to help make Gradle accessible to any developer."
+					</p>
+					<ul class="list-inline meta">
+						<li class="list-inline-item">Samuel Brown, Blackboard, Inc.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Feature Team  ====-->
+
+{{ partial "call-to-action.html" . }}
+
+<!--============================
+=            Footer            =
+=============================-->
+
+{{ partial "footer.html" . }}

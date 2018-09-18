@@ -1,0 +1,51 @@
+baseURL = "https://automatedascent.com/"
+languageCode = "en-us"
+title = "Automated Ascent"
+googleAnalytics = "UA-125784241-1"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "services"
+    name = "Services"
+    url = "/services/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "consulting"
+    name = "Consulting"
+    url = "/services/consulting/"
+    parent = "services"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "training"
+    name = "Training"
+    url = "/services/training/"
+    parent = "services"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "tech-writing"
+    name = "Technical Writing"
+    url = "/services/tech-writing/"
+    parent = "services"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 7

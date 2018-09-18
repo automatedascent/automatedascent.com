@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }}</title>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="{{ "plugins/bootstrap/css/bootstrap.min.css" | absURL }}" rel="stylesheet">
+  <!-- Themefisher Font -->  
+  <link href="{{ "plugins/themefisher-font/style.css" | absURL }}" rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="{{ "plugins/owl-carousel/assets/owl.carousel.min.css" | absURL }}" rel="stylesheet" media="screen">
+  <!-- Owl Carousel Theme -->
+  <link href="{{ "plugins/owl-carousel/assets/owl.theme.green.min.css" | absURL }}" rel="stylesheet" media="screen">
+  <!-- Fancy Box -->
+  <link href="{{ "plugins/fancybox/jquery.fancybox.min.css" | absURL }}" rel="stylesheet">
+
+  <!-- CUSTOM CSS -->
+  <link href="{{ "css/style.css" | absURL }}" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="{{ "images/favicon.ico" | absURL }}" rel="shortcut icon">
+  
+  {{ if ne (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
+    {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
+
+</head>
+
+<body class="body-wrapper">
