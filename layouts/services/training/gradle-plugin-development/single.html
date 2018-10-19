@@ -1,0 +1,173 @@
+{{ partial "header-with-nav.html" . }}
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9 m-auto">
+				<!-- Page Title -->
+				<h1>In-depth Gradle plugin development</h1>
+				<!-- Page Description -->
+				<p>Writing and distributing reusable, maintainable and tested build logic</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+<!--====================================
+=            Training Details          =
+=====================================-->
+
+<section class="training section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<nav class="training-nav">
+					<ul>
+                        <li><a href="#summary" class="scrollTo">Summary</a></li>
+                        <li><a href="#duration" class="scrollTo">Duration</a></li>
+						<li><a href="#objectives" class="scrollTo">What you’ll learn</a></li>
+                        <li><a href="#prerequisites" class="scrollTo">Prerequisites</a></li>
+                        <li><a href="#curriculum" class="scrollTo">Curriculum</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-9">
+				<div class="block">
+					<div id="summary" class="training-item">
+						<div class="title">
+							<h3>Summary</h3>
+						</div>
+						<div class="training-details">
+							<p>Gradle build scripts should be as declarative as possible to avoid one-off logic that is hard to understand and maintain. The plugin mechanism empowers build engineers to write reusable, maintainable and tested build logic.</p>
+							<p>This practical course catapults you from zero to plugin expert by delivering best practices and hands-on experience. By the end of this course, you will understand the full development lifecycle needed to implement, test, document and publish your own Gradle plugins.</p>
+						</div>
+                    </div>
+                    <div id="duration" class="training-item">
+                        <div class="title">
+                            <h3>Duration</h3>
+                        </div>
+                        <div class="training-details">
+                            <p>8 hours</p>
+                        </div>
+                    </div>
+					<div id="objectives" class="training-item">
+						<div class="title">
+							<h3>What you’ll learn</h3>
+						</div>
+						<div class="training-details">
+							<p>
+                                <ul>
+                                    <li>Understand the problems Gradle plugins can solve</li>
+                                    <li>Techniques and best practices used to implement a Gradle plugin</li>
+                                    <li>How to test, document and deliver a Gradle plugin</li>
+                                    <li>Ensure the best interoperability of plugin for use with the Groovy and Kotlin DSL</li>  
+                                </ul>
+                            </p>
+						</div>
+					</div>
+					<div id="prerequisites" class="training-item">
+						<div class="title">
+							<h3>Prerequisites</h3>
+						</div>
+						<div class="training-details">
+							<p>
+                                <ul>
+                                    <li>Working knowledge of the programming language Java</li>
+                                    <li>Familiarity with Gradle concepts and the DSL</li>
+                                    <li>Optional: Project automation techniques like testing and Continuous Integration</li>
+                                </ul>
+                            </p>
+						</div>
+                    </div>
+                    <div id="curriculum" class="training-item">
+						<div class="title">
+							<h3>Curriculum</h3>
+						</div>
+						<div class="training-details">
+							<p>
+                                <ul>
+                                    <li><b>Introduction</b>
+                                        <ul>
+                                            <li>Making your build logic maintainable & reusable</li>
+                                            <li>Typical plugin use cases</li>
+                                            <li>The different types of plugins in Gradle</li>
+                                            <li>The typical plugin development lifecycle</li>
+                                            <li>Our demo-plugin and the problems it will solve</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Implementing a plugin</b>
+                                        <ul>
+                                            <li>Picking a suitable JVM language to implement a plugin</li>
+                                            <li>Implementation jumpstart with the plugin development plugin</li>
+                                            <li>First steps in writing a binary plugin</li>
+                                            <li>Providing a plugin identifier</li>
+                                            <li>Hands-on exercise: Implementing a simple plugin</li>
+                                            <li>Hiding imperative logic in custom tasks</li>
+                                            <li>Lazy evaluation of user-provided configuration</li>
+                                            <li>Hands-on exercise: Enhancing the plugin by a task implementation</li>
+                                            <li>Exposing a custom DSL to control runtime behavior</li>
+                                            <li>Hands-on exercise: Writing an extension</li>
+                                            <li>Tips, tricks and best practices</li>
+                                            <li>Hands-on exercise: Applying plugin best practices</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Testing the plugin functionality</b>
+                                        <ul>
+                                            <li>Different types of tests</li>
+                                            <li>TestKit: the toolkit for testing plugins</li>
+                                            <li>Implementing and executing functional tests with TestKit & JUnit 5</li>
+                                            <li>Running tests from the IDE</li>
+                                            <li>Hands-on exercise: Writing and executing a functional test with TestKit</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Packaging and publishing plugins</b>
+                                        <ul>
+                                            <li>Versioning the plugin binary</li>
+                                            <li>Publishing to a binary repository</li>
+                                            <li>Publishing to the Gradle plugin portal</li>
+                                            <li>Hands-on exercise: Publishing and applying from a build</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Documenting plugins</b>
+                                        <ul>
+                                            <li>How does documentation help consumers of a plugin?</li>
+                                            <li>Creating helpful Javadoc documentation</li>
+                                            <li>Documenting plugin functionality</li>
+                                            <li>Auto-tested, embedded example source code</li>
+                                            <li>Hosting documentation</li>
+                                            <li>Hands-on exercise: Building effective documentation</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Continuous Integration for plugins</b>
+                                        <ul>
+                                            <li>Using Travis CI for Open Source plugins</li>
+                                            <li>Using Jenkins for enterprise plugins</li>
+                                            <li>Hands-on exercise: Setting up a build pipeline</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Summary and Q&A</b></li>
+                                </ul>
+                            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Training Details  ====-->
+
+{{ partial "call-to-action.html" . }}
+
+<!--============================
+=            Footer            =
+=============================-->
+
+{{ partial "footer.html" . }}
