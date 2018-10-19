@@ -17,7 +17,7 @@ before_script:
 
 # Build the website
 script:
-  - ./link-verifier -rootDirs content -includePatterns=*.yml -timeout 90
+  - ./link-verifier -rootDirs layouts -includePatterns=*.yml -timeout 90
   - ./hugo
   - echo automatedascent.com >> public/CNAME
 
