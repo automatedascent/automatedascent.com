@@ -131,7 +131,7 @@
             event.preventDefault();
             $.ajax({
                 method: "POST",
-                url: "https://app.99inbound.com/api/e/2MGJTXZb",
+                url: "https://app.99inbound.com/api/e/74bnVMQv",
                 data: {
                     name: $('#name').val(),
                     email: $('#email').val(),
