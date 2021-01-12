@@ -2,7 +2,7 @@ name: Build and Deploy [Linux]
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
