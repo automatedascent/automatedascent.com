@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automated Ascent</title>
+    <link>https://automatedascent.com/</link>
+    <description>Recent content on Automated Ascent</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://automatedascent.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About - Automated Ascent</title>
+      <link>https://automatedascent.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://automatedascent.com/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consulting - Automated Ascent</title>
+      <link>https://automatedascent.com/services/consulting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://automatedascent.com/services/consulting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact - Automated Ascent</title>
+      <link>https://automatedascent.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://automatedascent.com/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technical Writing - Automated Ascent</title>
+      <link>https://automatedascent.com/services/tech-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://automatedascent.com/services/tech-writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training - Automated Ascent</title>
+      <link>https://automatedascent.com/services/training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://automatedascent.com/services/training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training - Go for Java developers - Automated Ascent</title>
+      <link>https://automatedascent.com/services/training/go-for-java-developers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://automatedascent.com/services/training/go-for-java-developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training - Gradle builds with the Kotlin DSL - Automated Ascent</title>
+      <link>https://automatedascent.com/services/training/gradle-kotlin-dsl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://automatedascent.com/services/training/gradle-kotlin-dsl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training - In-depth Gradle plugin development - Automated Ascent</title>
+      <link>https://automatedascent.com/services/training/gradle-plugin-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://automatedascent.com/services/training/gradle-plugin-development/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

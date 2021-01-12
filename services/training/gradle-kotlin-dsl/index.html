@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training - Gradle builds with the Kotlin DSL - Automated Ascent</title>
+  
+  
+  
+  <link href="https://automatedascent.com/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+  <link href="https://automatedascent.com/plugins/themefisher-font/style.css" rel="stylesheet">
+  
+  <link href="https://automatedascent.com/plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+  
+  <link href="https://automatedascent.com/plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+  
+  <link href="https://automatedascent.com/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+
+  
+  <link href="https://automatedascent.com/css/style.css" rel="stylesheet">
+
+  
+  <link href="https://automatedascent.com/images/favicon.ico" rel="shortcut icon">
+  
+  
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-125784241-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+
+</head>
+
+<body class="body-wrapper">
+<nav class="navbar main-nav navbar-expand-lg p-0">
+  <div class="container">
+      <a class="navbar-brand" href="/"><div class="logo"><img src="https://automatedascent.com/images/logo.svg" alt="logo"></div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="tf-ion-android-menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li class="nav-item dropdown dropdown-slide active">
+              <a class="nav-link" href="/services/" data-toggle="dropdown">Services
+                <span><i class="tf-ion-ios-arrow-down"></i></span>
+              </a>
+              <div class="dropdown-menu">
+                
+                  <a class="dropdown-item" href="/services/consulting/">Consulting</a>
+                
+                  <a class="dropdown-item" href="/services/training/">Training</a>
+                
+                  <a class="dropdown-item" href="/services/tech-writing/">Technical Writing</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">About</a>
+            </li>
+          
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+      </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9 m-auto">
+				
+				<h1>Gradle builds with the Kotlin DSL</h1>
+				
+				<p>Implementing type-safe, developer-friendly automation code in Gradle</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<section class="training section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<nav class="training-nav">
+					<ul>
+                        <li><a href="#summary" class="scrollTo">Summary</a></li>
+                        <li><a href="#duration" class="scrollTo">Duration</a></li>
+						<li><a href="#objectives" class="scrollTo">What you’ll learn</a></li>
+                        <li><a href="#prerequisites" class="scrollTo">Prerequisites</a></li>
+                        <li><a href="#curriculum" class="scrollTo">Curriculum</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-9">
+				<div class="block">
+					<div id="summary" class="training-item">
+						<div class="title">
+							<h3>Summary</h3>
+						</div>
+						<div class="training-details">
+							<p>Gradle 5.0 introduces the Kotlin DSL as the primary language for implementing build scripts. This is great news for Gradle users and build logic authors alike. The Kotlin DSL provides type-safety as well as autocompletion, API discoverability and debuggability from the IDE.</p>
+							<p>Kotlin’s popularity has grown tremendously among the JVM community. If you are looking to use Kotlin for your build logic to get more productive, then this course is for you. In this hands-on training, you will learn how to set up a Gradle build with the Kotlin DSL from scratch. It also guides you through migration strategies to turn your Groovy-based build into a Kotlin-powered build. By the end of the course, you’ll understand the basics of the Kotlin programming language and know how to apply Gradle DSL best practices to develop your project automation code.</p>
+						</div>
+                    </div>
+                    <div id="duration" class="training-item">
+                        <div class="title">
+                            <h3>Duration</h3>
+                        </div>
+                        <div class="training-details">
+                            <p>4 hours</p>
+                        </div>
+                    </div>
+					<div id="objectives" class="training-item">
+						<div class="title">
+							<h3>What you’ll learn</h3>
+						</div>
+						<div class="training-details">
+							<p>
+                                <ul>
+                                    <li>The benefits of the Kotlin DSL</li>
+                                    <li>Kotlin programming language basics to help you make a connection to the DSL</li>
+                                    <li>The Gradle Kotlin DSL to implement complex build logic</li>
+                                    <li>How to migrate a Groovy DSL-based build to the Kotlin DSL</li>  
+                                </ul>
+                            </p>
+						</div>
+					</div>
+					<div id="prerequisites" class="training-item">
+						<div class="title">
+							<h3>Prerequisites</h3>
+						</div>
+						<div class="training-details">
+							<p>
+                                <ul>
+                                    <li>Working knowledge of the programming languages Java or Groovy</li>
+                                    <li>Familiarity with basic Gradle concepts and the Groovy DSL</li>
+                                    <li>An installation of IntelliJ community or professional edition</li>
+                                </ul>
+                            </p>
+						</div>
+                    </div>
+                    <div id="curriculum" class="training-item">
+						<div class="title">
+							<h3>Curriculum</h3>
+						</div>
+						<div class="training-details">
+							<p>
+                                <ul>
+                                    <li><b>Benefits of using the Kotlin DSL</b>
+                                        <ul>
+                                            <li>Shortcomings of the Groovy DSL</li>
+                                            <li>Type-safety & Null-safety</li>
+                                            <li>Improved IDE support</li>
+                                            <li>Performance aspects</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Introduction to essential Kotlin language features</b>
+                                        <ul>
+                                            <li>Language syntax compared to Java and Groovy</li>
+                                            <li>Types and properties</li>
+                                            <li>Creating classes and instantiating objects</li>
+                                            <li>Defining and calling functions</li>
+                                            <li>Creating and using collections</li>
+                                            <li>Using Lambdas</li>
+                                            <li>Hands-on exercise: Using Kotlin language features</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>The Kotlin DSL in practice</b>
+                                        <ul>
+                                            <li>Kotlin build file conventions</li>
+                                            <li>Syntactic sugar added by the Kotlin DSL</li>
+                                            <li>Applying plugins</li>
+                                            <li>Configuring plugin tasks and extensions</li>
+                                            <li>Declaring repositories and dependencies</li>
+                                            <li>Hands-on exercise: Building a typical Java application</li>
+                                            <li>Creating and configuring ad-hoc and custom tasks</li>
+                                            <li>Hands-on exercise: Implementing custom build logic</li>
+                                            <li>Authoring multi-project builds</li>
+                                            <li>Organizing complex build logic</li>
+                                            <li>Hands-on exercise: Writing maintainable custom build logic</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Migrating Groovy-based builds to the Kotlin DSL</b>
+                                        <ul>
+                                            <li>Migration strategies</li>
+                                            <li>Precompiled script plugins vs. buildSrc</li>
+                                            <li>Interoperability with Groovy types and methods</li>
+                                            <li>Calling Groovy code and script plugins from Kotlin</li>
+                                            <li>Hands-on exercise: Migrating a build script from Groovy to Kotlin</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Summary and Q&A</b></li>
+                                </ul>
+                            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="call-to-action-app section bg-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Ready? Let's talk!</h2>
+				<p>We're here to help. If you'd like to learn more, get in touch with us.</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="/contact" class="btn btn-rounded-icon">
+							<i class="tf-ion-chatboxes"></i>
+							Contact us
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 m-md-auto align-self-center">
+          <div class="block">
+            <div class="logo"><img src="https://automatedascent.com/images/logo-footer.svg" alt="footer-logo"></div>
+            
+            <ul class="social-icon list-inline">
+              <li class="list-inline-item">
+                <a href="mailto:hello@automatedascent.com"><i class="tf-ion-email"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/company/automatedascent/" target="_blank"><i class="tf-ion-social-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://bmuschko.com/" target="_blank"><i class="tf-ion-social-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">&copy; 2021 Automated Ascent LLC</div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+          <div class="block-2">
+            
+            <h6>Services</h6>
+            
+            <ul>
+              <li><a href="/services/consulting/">Consulting</a></li>
+              <li><a href="/services/training/">Training</a></li>
+              <li><a href="/services/tech-writing/">Technical Writing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+          <div class="block-2">
+            
+            <h6>Company</h6>
+            
+            <ul>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+<script src="https://automatedascent.com/plugins/jquery/jquery.js"></script>
+<script src="https://automatedascent.com/plugins/popper/popper.min.js"></script>
+<script src="https://automatedascent.com/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://automatedascent.com/plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="https://automatedascent.com/plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="https://automatedascent.com/plugins/smoothscroll/SmoothScroll.min.js"></script>
+<script src="https://automatedascent.com/plugins/syotimer/jquery.syotimer.min.js"></script>
+
+<script src="https://automatedascent.com/js/custom.js"></script>
+</body>
+
+</html>
