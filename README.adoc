@@ -1,4 +1,4 @@
-= Web presence of Automated Ascent
+= Web presence of Automated Ascent image:https://github.com/automatedascent/automatedascent.com/workflows/Build%20and%20Deploy%20%5BLinux%5D/badge.svg["Build Status", link="https://github.com/automatedascent/automatedascent.com/actions?query=workflow%3A%22Build+and+Deploy+%5BLinux%5D%22"]
 :uri-hugo: https://gohugo.io/
 :uri-99designs: https://99designs.com/
 :uri-themefisher: https://themefisher.com/
