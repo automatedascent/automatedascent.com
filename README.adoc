@@ -25,5 +25,5 @@ $ hugo server
 
 == Copyright
 
-Copyright (C) 2018 {uri-automatedascent}[Automated Ascent LLC]
+Copyright (C) 2021 {uri-automatedascent}[Automated Ascent LLC]
 All rights reserved.
