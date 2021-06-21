@@ -1,57 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://automatedascent.com/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/services/consulting/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/contact/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/services/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/services/tech-writing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/services/training/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/services/training/go-for-java-developers/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/services/training/gradle-kotlin-dsl/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://automatedascent.com/services/training/gradle-plugin-development/</loc>
   </url>
-  
 </urlset>
