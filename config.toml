@@ -1,7 +1,7 @@
 baseURL = "https://automatedascent.com/"
 languageCode = "en-us"
 title = "Automated Ascent"
-googleAnalytics = "UA-125784241-1"
+googleAnalytics = "G-0Y1P7L3C8R"
 
 [menu]
 
