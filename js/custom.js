@@ -6,7 +6,7 @@
         //  Testimonial Slider
         // -----------------------------
         $('.testimonial-slider').owlCarousel({
-            loop:true,
+            loop:false,
             margin:20,
             dots:true,
             autoplay:true,
