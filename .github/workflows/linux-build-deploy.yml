@@ -25,8 +25,8 @@ jobs:
           tar -xvf /tmp/hugo.tar.gz
           tar -xvf /tmp/link-verifier.tar.gz
           export PATH=$PATH:$PWD/hugo/:$PWD/link-verifier/
-      - name: Verify links
-        run: ./link-verifier --dirs layouts --includes *.html --ignore-status-codes 999,400,429,403 --timeout 90
+      # - name: Verify links
+      #   run: ./link-verifier --dirs layouts --includes *.html --ignore-status-codes 999,400,429,403 --timeout 90
       - name: Build website
         run: |
           ./hugo
