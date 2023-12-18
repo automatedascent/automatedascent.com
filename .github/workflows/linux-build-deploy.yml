@@ -11,8 +11,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
+     - uses: actions/checkout@v4
+       with:
+         submodules: true
+         fetch-depth: 0
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -28,11 +30,11 @@ jobs:
           export PATH=$PATH:$PWD/link-verifier/
       # - name: Verify links
       #   run: ./link-verifier --dirs layouts --includes *.html --ignore-status-codes 999,400,429,403 --timeout 90
-      - name: Build website
+      - name: Build
         run: |
           hugo
           echo automatedascent.com >> public/CNAME
-      - name: Deploy website
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
