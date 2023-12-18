@@ -26,8 +26,6 @@ jobs:
           wget https://github.com/bmuschko/link-verifier/releases/download/v0.7/link-verifier-0.7-linux-amd64.tar.gz -O /tmp/link-verifier.tar.gz
           tar -xvf /tmp/link-verifier.tar.gz
           export PATH=$PATH:$PWD/link-verifier/
-      - name: Clean
-        run: rm -rf public || exit 0
       # - name: Verify links
       #   run: ./link-verifier --dirs layouts --includes *.html --ignore-status-codes 999,400,429,403 --timeout 90
       - name: Build website
