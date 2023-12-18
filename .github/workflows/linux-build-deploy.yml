@@ -1,11 +1,11 @@
-name: Build and Deploy
+name: Automated Ascent Website
 on:
   push:
     branches:
       - master
 
 jobs:
-  build:
+  build-deploy:
     name: Build and Deploy
     runs-on: ubuntu-22.04
     concurrency:
