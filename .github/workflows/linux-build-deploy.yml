@@ -1,4 +1,4 @@
-name: Build and Deploy [Linux]
+name: Build and Deploy
 on:
   push:
     branches:
@@ -8,6 +8,8 @@ jobs:
   build:
     name: Build and Deploy
     runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     permissions:
       contents: write
     steps:
