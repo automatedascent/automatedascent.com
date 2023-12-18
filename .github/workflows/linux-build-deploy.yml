@@ -33,7 +33,7 @@ jobs:
       #   run: ./link-verifier --dirs layouts --includes *.html --ignore-status-codes 999,400,429,403 --timeout 90
       - name: Build website
         run: |
-          ./hugo
+          hugo
           echo automatedascent.com >> public/CNAME
       - name: Deploy website
         uses: peaceiris/actions-gh-pages@v3
