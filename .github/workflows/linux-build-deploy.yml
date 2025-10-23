@@ -7,7 +7,7 @@ on:
 jobs:
   build-deploy:
     name: Build and Deploy
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     permissions:
