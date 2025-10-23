@@ -6,7 +6,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        {{ $url := .URL }}
+        {{ $url := .RelPermalink }}
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown dropdown-slide{{ if in $url .URL }} active{{ end }}">
