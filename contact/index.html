@@ -151,7 +151,7 @@
 							<i class="tf-linkedin"></i>
 						</div>
 						<div class="details">
-							<a href="https://www.linkedin.com/company/automatedascent/" target="_blank"><h3>automatedascent</h3></a>
+							<a href="https://www.linkedin.com/company/automatedascent/" target="_blank" rel="noopener noreferrer"><h3>automatedascent</h3></a>
 						</div>
 					</div>
 				</div>
@@ -170,19 +170,47 @@
 					<div class="row">
 						
 						<div class="col-md-6">
-							<input class="form-control main" type="text" id="name" placeholder="Name" required>
+							<input class="form-control main"
+								   type="text"
+								   id="name"
+								   name="name"
+								   placeholder="Name"
+								   required
+								   minlength="2"
+								   maxlength="100"
+								   pattern="[A-Za-z\s\-']+"
+								   title="Please enter a valid name (letters, spaces, hyphens, and apostrophes only)">
 						</div>
 						
 						<div class="col-md-6">
-							<input class="form-control main" type="email" id="email" placeholder="Your Email Address" required>
+							<input class="form-control main"
+								   type="email"
+								   id="email"
+								   name="email"
+								   placeholder="Your Email Address"
+								   required
+								   maxlength="255"
+								   pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+								   title="Please enter a valid email address">
 						</div>
 						
 						<div class="col-md-12">
-							<textarea class="form-control main" id="message" rows="10" placeholder="Your Message"></textarea>
+							<textarea class="form-control main"
+									  id="message"
+									  name="message"
+									  rows="10"
+									  placeholder="Your Message"
+									  required
+									  minlength="10"
+									  maxlength="5000"></textarea>
+						</div>
+						
+						<div class="col-md-12" style="position: absolute; left: -5000px;" aria-hidden="true">
+							<input type="text" id="honeypot" name="website" tabindex="-1" autocomplete="off">
 						</div>
 						
 						<div class="col-12 text-right">
-							<button class="btn btn-main-md">Submit</button>
+							<button type="submit" class="btn btn-main-md" id="submit-btn">Submit</button>
 						</div>
 					</div>
 				</form>
@@ -213,10 +241,10 @@
                 <a href="mailto:hello@automatedascent.com"><i class="tf-ion-email"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.linkedin.com/company/automatedascent/" target="_blank"><i class="tf-ion-social-linkedin"></i></a>
+                <a href="https://www.linkedin.com/company/automatedascent/" target="_blank" rel="noopener noreferrer"><i class="tf-ion-social-linkedin"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://bmuschko.com/" target="_blank"><i class="tf-ion-social-rss"></i></a>
+                <a href="https://bmuschko.com/" target="_blank" rel="noopener noreferrer"><i class="tf-ion-social-rss"></i></a>
               </li>
             </ul>
           </div>
