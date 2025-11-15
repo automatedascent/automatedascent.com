@@ -5,9 +5,15 @@
   --primary-blue: #2e7eed;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
