@@ -58,7 +58,7 @@
 							<i class="tf-linkedin"></i>
 						</div>
 						<div class="details">
-							<a href="https://www.linkedin.com/company/automatedascent/" target="_blank"><h3>automatedascent</h3></a>
+							<a href="https://www.linkedin.com/company/automatedascent/" target="_blank" rel="noopener noreferrer"><h3>automatedascent</h3></a>
 						</div>
 					</div>
 				</div>
@@ -77,19 +77,47 @@
 					<div class="row">
 						<!-- Name -->
 						<div class="col-md-6">
-							<input class="form-control main" type="text" id="name" placeholder="Name" required>
+							<input class="form-control main"
+								   type="text"
+								   id="name"
+								   name="name"
+								   placeholder="Name"
+								   required
+								   minlength="2"
+								   maxlength="100"
+								   pattern="[A-Za-z\s\-']+"
+								   title="Please enter a valid name (letters, spaces, hyphens, and apostrophes only)">
 						</div>
 						<!-- Email -->
 						<div class="col-md-6">
-							<input class="form-control main" type="email" id="email" placeholder="Your Email Address" required>
+							<input class="form-control main"
+								   type="email"
+								   id="email"
+								   name="email"
+								   placeholder="Your Email Address"
+								   required
+								   maxlength="255"
+								   pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+								   title="Please enter a valid email address">
 						</div>
 						<!-- Message -->
 						<div class="col-md-12">
-							<textarea class="form-control main" id="message" rows="10" placeholder="Your Message"></textarea>
+							<textarea class="form-control main"
+									  id="message"
+									  name="message"
+									  rows="10"
+									  placeholder="Your Message"
+									  required
+									  minlength="10"
+									  maxlength="5000"></textarea>
+						</div>
+						<!-- Honeypot field (hidden from users, catches bots) -->
+						<div class="col-md-12" style="position: absolute; left: -5000px;" aria-hidden="true">
+							<input type="text" id="honeypot" name="website" tabindex="-1" autocomplete="off">
 						</div>
 						<!-- Submit Button -->
 						<div class="col-12 text-right">
-							<button class="btn btn-main-md">Submit</button>
+							<button type="submit" class="btn btn-main-md" id="submit-btn">Submit</button>
 						</div>
 					</div>
 				</form>
