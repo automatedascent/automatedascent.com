@@ -1,7 +1,7 @@
 (function ($) {
     'use strict';
 
-    $(document).on('ready', function () {
+    $(document).ready(function () {
         // -----------------------------
         //  Glassmorphism Nav on Scroll
         // -----------------------------
@@ -33,47 +33,29 @@
         checkVisibility();
 
         // -----------------------------
-        //  Testimonial Slider
+        //  Testimonial Slider (Swiper)
         // -----------------------------
-        $('.testimonial-slider').owlCarousel({
-            loop:true,
-            margin:20,
-            dots:true,
-            autoplay:true,
-            autoplayTimeout:20000,
-            responsive:{
-                0:{
-                    items:1
+        if ($('.testimonial-slider').length > 0) {
+            var testimonialSwiper = new Swiper('.testimonial-slider', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 10000,
+                    disableOnInteraction: false,
                 },
-                400:{
-                    items:1
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:2
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    }
                 }
-            }
-        });
-        // -----------------------------
-        //  Story Slider
-        // -----------------------------
-        $('.about-slider').owlCarousel({
-            loop:true,
-            margin:20,
-            dots:true,
-            autoplay:true,
-            items : 1
-        });
-        // -----------------------------
-        //  Quote Slider
-        // -----------------------------
-        $('.quote-slider').owlCarousel({
-            loop:true,
-            autoplay:true,
-            items : 1
-        });
+            });
+        }
         // -----------------------------
         //  On Click Smooth scrool
         // -----------------------------
@@ -84,31 +66,6 @@
                scrollTop: ($(target).offset().top)
              }, 500);
           });
-        // -----------------------------
-        //  Client Slider
-        // -----------------------------
-        $('.client-slider').owlCarousel({
-            loop:true,
-            autoplay:true,
-            margin: 50,
-            responsive:{
-                0:{
-                    items:1,
-                    dots:false
-                },
-                400:{
-                    items:2,
-                    dots:false
-                },
-                600:{
-                    items:2,
-                    dots:false
-                },
-                1000:{
-                    items:4
-                }
-            }
-        });
         // -----------------------------
         //  Video Replace
         // -----------------------------

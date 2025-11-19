@@ -1294,23 +1294,34 @@ a:focus, a:hover {
   outline: 0;
 }
 
-.testimonial .testimonial-slider .item {
-  padding-bottom: 10px;
+.testimonial .testimonial-slider {
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
 }
 
-.testimonial .testimonial-slider .item .block {
+.testimonial .testimonial-slider .swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial .testimonial-slider .swiper-slide .block {
   padding: 50px 40px;
   text-align: center;
-  margin: 10px;
   border-radius: 15px;
   background: #fff;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.testimonial .testimonial-slider .item .block::before {
+.testimonial .testimonial-slider .swiper-slide .block::before {
   content: '"';
   position: absolute;
   top: 20px;
@@ -1321,12 +1332,12 @@ a:focus, a:hover {
   line-height: 1;
 }
 
-.testimonial .testimonial-slider .item .block:hover {
+.testimonial .testimonial-slider .swiper-slide .block:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 50px rgba(46, 126, 237, 0.15);
 }
 
-.testimonial .testimonial-slider .item .block .image {
+.testimonial .testimonial-slider .swiper-slide .block .image {
   margin-top: 30px;
   margin-bottom: 15px;
   width: 100%;
@@ -1338,15 +1349,7 @@ a:focus, a:hover {
           justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .testimonial .testimonial-slider .item .block .image {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-}
-
-.testimonial .testimonial-slider .item .block .image img {
+.testimonial .testimonial-slider .swiper-slide .block .image img {
   height: 60px;
   width: 60px;
   border-radius: 100%;
@@ -1355,12 +1358,12 @@ a:focus, a:hover {
   transition: all 0.3s ease;
 }
 
-.testimonial .testimonial-slider .item .block:hover .image img {
+.testimonial .testimonial-slider .swiper-slide .block:hover .image img {
   transform: scale(1.1);
   border-color: #2e7eed;
 }
 
-.testimonial .testimonial-slider .item .block p {
+.testimonial .testimonial-slider .swiper-slide .block p {
   font-family: "Lora", serif;
   font-style: italic;
   color: #555;
@@ -1368,22 +1371,37 @@ a:focus, a:hover {
   line-height: 1.8;
 }
 
-.testimonial .testimonial-slider .item .block cite {
+.testimonial .testimonial-slider .swiper-slide .block cite {
   font-style: normal;
   font-size: 15px;
-  color: var(--dark-charcoal);
+  color: #1a1a1a;
   font-weight: 600;
 }
 
-.testimonial .testimonial-slider .owl-dots .owl-dot:hover span {
+.testimonial .testimonial-slider .swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.testimonial .testimonial-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+  margin: 0 6px;
+}
+
+.testimonial .testimonial-slider .swiper-pagination-bullet:hover {
   background: #2e7eed;
 }
 
-.testimonial .testimonial-slider .owl-dots .owl-dot.active span {
-  background: var(--primary-blue);
+.testimonial .testimonial-slider .swiper-pagination-bullet-active {
+  background: #2e7eed !important;
   width: 30px;
   border-radius: 10px;
-  transition: all 0.3s ease;
 }
 
 .founder {
