@@ -9,7 +9,22 @@
   <title>{{ .Title }}</title>
 
   <!-- SEO -->
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and Continuous Integration/Continuous Delivery implementations. Expert consulting, training, and technical writing services." }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and Continuous Integration/Continuous Delivery implementations. Expert consulting, training, and technical writing services." }}{{ end }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ .Permalink }}">
+  <meta property="twitter:title" content="{{ .Title }}">
+  <meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and Continuous Integration/Continuous Delivery implementations. Expert consulting, training, and technical writing services." }}{{ end }}">
+  <meta property="twitter:image" content="{{ .Site.BaseURL }}images/logo.svg">
   
   <!-- PLUGINS CSS STYLE -->
   <!-- Bootstrap -->
