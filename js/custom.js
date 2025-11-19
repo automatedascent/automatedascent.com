@@ -40,6 +40,9 @@
                 slidesPerView: 1,
                 spaceBetween: 30,
                 loop: true,
+                grabCursor: true,
+                touchRatio: 1,
+                touchAngle: 45,
                 autoplay: {
                     delay: 10000,
                     disableOnInteraction: false,
@@ -47,6 +50,11 @@
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
+                    dynamicBullets: false,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
                 breakpoints: {
                     768: {
