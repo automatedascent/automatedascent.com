@@ -41,7 +41,7 @@ p, a, li, blockquote, label {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 25px;
-  color: #808080;
+  color: #595959;
   margin-bottom: 0;
 }
 
@@ -648,7 +648,7 @@ a:focus, a:hover {
 
 .footer-main .block-2 ul li a {
   font-size: 14px;
-  color: #6f6f71;
+  color: #b8b8b8;
 }
 
 .footer-classic {
