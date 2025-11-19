@@ -2788,3 +2788,26 @@ a:focus, a:hover {
     margin: 0 5px;
   }
 }
+
+/* Testimonial header */
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Book cover images */
+.book-cover {
+  width: 280px;
+  height: auto;
+}
+
+/* Badge images */
+.badge-large {
+  width: 70px;
+  height: auto;
+}
+
+.badge-medium {
+  width: 60px;
+  height: auto;
+}
