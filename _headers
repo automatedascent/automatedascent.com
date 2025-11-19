@@ -1,0 +1,26 @@
+# Security Headers Configuration
+# NOTE: GitHub Pages does not support custom headers.
+# This file is for future use if migrating to Netlify, Cloudflare Pages, or similar platforms.
+# For GitHub Pages, consider using Cloudflare as a CDN proxy to add these headers.
+
+/*
+  # Content Security Policy - Prevents XSS attacks
+  Content-Security-Policy: default-src 'self'; script-src 'self' cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' app.99inbound.com https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+
+  # Prevent browsers from incorrectly detecting non-scripts as scripts
+  X-Content-Type-Options: nosniff
+
+  # Prevent site from being embedded in iframes (clickjacking protection)
+  X-Frame-Options: DENY
+
+  # Enable browser XSS protection
+  X-XSS-Protection: 1; mode=block
+
+  # Control how much referrer information is sent
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Enforce HTTPS
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Feature Policy / Permissions Policy
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=()
