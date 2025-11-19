@@ -2752,3 +2752,39 @@ a:focus, a:hover {
     image-rendering: -webkit-optimize-contrast;
   }
 }
+/* Swiper navigation buttons styling */
+.testimonial .swiper-button-prev,
+.testimonial .swiper-button-next {
+  color: #2e7eed;
+  width: 44px;
+  height: 44px;
+}
+
+.testimonial .swiper-button-prev:after,
+.testimonial .swiper-button-next:after {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Mobile-specific improvements for testimonial carousel */
+@media (max-width: 767px) {
+  .testimonial .swiper-button-prev,
+  .testimonial .swiper-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial .testimonial-slider .swiper-pagination {
+    margin-top: 30px;
+  }
+  
+  .testimonial .testimonial-slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+}
