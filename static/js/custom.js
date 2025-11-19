@@ -81,47 +81,9 @@
             var video = '<iframe allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
             $(this).replaceWith(video);
         });
-        // -----------------------------
-        //  Count Down JS
-        // -----------------------------
-        $('#simple-timer').syotimer({
-            year: 2018,
-            month: 5,
-            day: 9,
-            hour: 20,
-            minute: 30
-        });
-        // -----------------------------
-        //  Google Map
-        // -----------------------------
-
-        function initialize() {
-            var styleArray = [];
-
-            var myLatLng = {lat: 52.188933, lng: 33.083869};
-
-            var mapOptions = {
-                zoom: 7,
-                scrollwheel: false,
-                center: new google.maps.LatLng(52.188933, 33.083869),
-                styles: styleArray
-            };
-
-            var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
-            
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Nexa'
-            });
-        }
-        var mapId = $('#googleMap');
-        if (mapId.length) {
-            google.maps.event.addDomListener(window, 'load', initialize);
-        }
 
         // -----------------------------
-        //  Extra customization
+        //  Contact Form
         // -----------------------------
 
         // Rate limiting: Track last submission time
