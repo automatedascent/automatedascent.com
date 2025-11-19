@@ -2353,6 +2353,19 @@ a:focus, a:hover {
   padding: 70px;
 }
 
+/* Mobile responsive fix for index images */
+@media (max-width: 767px) {
+  .index-image-right img,
+  .index-image-left img {
+    position: relative;
+    width: 100%;
+    left: auto;
+    right: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}
+
 .slider .block .learn-more {
   margin-top: 30px;
 }
