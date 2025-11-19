@@ -225,7 +225,7 @@
 									  aria-label="Your message"></textarea>
 						</div>
 						
-						<div class="col-md-12" style="position: absolute; left: -5000px;" aria-hidden="true">
+						<div class="col-md-12 honeypot-field" aria-hidden="true">
 							<input type="text" id="honeypot" name="website" tabindex="-1" autocomplete="off">
 						</div>
 						
@@ -234,11 +234,11 @@
 						</div>
 					</div>
 				</form>
-                <div class="alert alert-success" id="contact-success" style="display:none;">
+                <div class="alert alert-success alert-hidden" id="contact-success">
                     <h4 class="alert-heading">Great!</h4>
                     <p>We received your details and will be in touch shortly.</p>
                 </div>
-                <div class="alert alert-danger" id="contact-error" style="display:none;">
+                <div class="alert alert-danger alert-hidden" id="contact-error">
                     <h4 class="alert-heading">Something went wrong!</h4>
                     <p>Please send us an email instead.</p>
                 </div>
