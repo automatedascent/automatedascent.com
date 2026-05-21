@@ -73,15 +73,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-11 m-auto">
-				<form action="https://formsubmit.co/hello@automatedascent.com" method="POST">
-					<input type="hidden" name="_subject" value="New message from automatedascent.com">
-					<input type="hidden" name="_captcha" value="true">
-					<input type="hidden" name="_template" value="table">
-					<input type="text" name="_honey" style="display:none">
+				<form id="contact">
 					<div class="row">
 						<!-- Name -->
 						<div class="col-md-6">
-							<label for="name" class="visually-hidden">Name</label>
+							<label for="name" class="sr-only">Name</label>
 							<input class="form-control main"
 								   type="text"
 								   id="name"
@@ -96,7 +92,7 @@
 						</div>
 						<!-- Email -->
 						<div class="col-md-6">
-							<label for="email" class="visually-hidden">Email</label>
+							<label for="email" class="sr-only">Email</label>
 							<input class="form-control main"
 								   type="email"
 								   id="email"
@@ -110,7 +106,7 @@
 						</div>
 						<!-- Message -->
 						<div class="col-md-12">
-							<label for="message" class="visually-hidden">Message</label>
+							<label for="message" class="sr-only">Message</label>
 							<textarea class="form-control main"
 									  id="message"
 									  name="message"
@@ -121,12 +117,24 @@
 									  maxlength="5000"
 									  aria-label="Your message"></textarea>
 						</div>
+						<!-- Honeypot field (hidden from users, catches bots) -->
+						<div class="col-md-12 honeypot-field" aria-hidden="true">
+							<input type="text" id="honeypot" name="website" tabindex="-1" autocomplete="off">
+						</div>
 						<!-- Submit Button -->
-						<div class="col-12 text-end">
-							<button type="submit" class="btn btn-main-md">Submit</button>
+						<div class="col-12 text-right">
+							<button type="submit" class="btn btn-main-md" id="submit-btn">Submit</button>
 						</div>
 					</div>
 				</form>
+                <div class="alert alert-success alert-hidden" id="contact-success">
+                    <h4 class="alert-heading">Great!</h4>
+                    <p>We received your details and will be in touch shortly.</p>
+                </div>
+                <div class="alert alert-danger alert-hidden" id="contact-error">
+                    <h4 class="alert-heading">Something went wrong!</h4>
+                    <p>Please send us an email instead.</p>
+                </div>
 			</div>
 		</div>
 	</div>

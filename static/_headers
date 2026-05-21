@@ -5,7 +5,7 @@
 
 /*
   # Content Security Policy - Prevents XSS attacks
-  Content-Security-Policy: default-src 'self'; script-src 'self' cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' cdn.jsdelivr.net fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co
+  Content-Security-Policy: default-src 'self'; script-src 'self' cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' app.99inbound.com https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 
   # Prevent browsers from incorrectly detecting non-scripts as scripts
   X-Content-Type-Options: nosniff
@@ -21,10 +21,6 @@
 
   # Enforce HTTPS
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-
-  # Cross-Origin Isolation
-  Cross-Origin-Opener-Policy: same-origin
-  Cross-Origin-Embedder-Policy: require-corp
 
   # Feature Policy / Permissions Policy
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=()

@@ -17,36 +17,22 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and Continuous Integration/Continuous Delivery implementations. Expert consulting, training, and technical writing services." }}{{ end }}">
-  <meta property="og:image" content="{{ .Site.BaseURL }}images/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo.svg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="{{ .Permalink }}">
   <meta property="twitter:title" content="{{ .Title }}">
   <meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and Continuous Integration/Continuous Delivery implementations. Expert consulting, training, and technical writing services." }}{{ end }}">
-  <meta property="twitter:image" content="{{ .Site.BaseURL }}images/og-image.png">
+  <meta property="twitter:image" content="{{ .Site.BaseURL }}images/logo.svg">
   
-  <!-- DNS PREFETCH & PRECONNECT -->
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-
-  <!-- GOOGLE FONTS (non-blocking) -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800&display=swap">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-
   <!-- PLUGINS CSS STYLE -->
   <!-- Bootstrap -->
   <link href="{{ "plugins/bootstrap/css/bootstrap.min.css" | absURL }}" rel="stylesheet">
-  <!-- Themefisher Font -->
+  <!-- Themefisher Font -->  
   <link href="{{ "plugins/themefisher-font/style.css" | absURL }}" rel="stylesheet">
   <!-- Swiper Carousel -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" integrity="sha384-gAPqlBuTCdtVcYt9ocMOYWrnBZ4XSL6q+4eXqwNycOr4iFczhNKtnYhF3NEXJM51" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- CUSTOM CSS -->
   <link href="{{ "css/style.css" | absURL }}" rel="stylesheet">
@@ -54,42 +40,6 @@
   <!-- FAVICON -->
   <link href="{{ "images/favicon.ico" | absURL }}" rel="shortcut icon">
   
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Automated Ascent",
-    "url": "https://automatedascent.com",
-    "logo": "https://automatedascent.com/images/logo.svg",
-    "description": "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and CI/CD implementations.",
-    "founder": {
-      "@type": "Person",
-      "name": "Benjamin Muschko",
-      "jobTitle": "Founder",
-      "sameAs": [
-        "https://github.com/bmuschko",
-        "https://www.linkedin.com/in/benjaminmuschko/",
-        "https://bmuschko.com"
-      ]
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Denver",
-      "addressRegion": "CO",
-      "addressCountry": "US"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "hello@automatedascent.com",
-      "contactType": "customer service"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/company/automatedascent/"
-    ]
-  }
-  </script>
-
   {{ if ne (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
     {{ template "_internal/google_analytics.html" . }}
   {{ end }}
