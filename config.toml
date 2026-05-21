@@ -3,6 +3,14 @@ languageCode = "en-us"
 title = "Automated Ascent"
 googleAnalytics = "G-0Y1P7L3C8R"
 
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+
 [menu]
 
   [[menu.main]]
