@@ -26,10 +26,42 @@
   <meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and Continuous Integration/Continuous Delivery implementations. Expert consulting, training, and technical writing services." }}{{ end }}">
   <meta property="twitter:image" content="{{ .Site.BaseURL }}images/logo.svg">
   
+  <!-- DNS Prefetch / Preconnect -->
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Automated Ascent",
+    "url": "https://automatedascent.com",
+    "logo": "https://automatedascent.com/images/logo.svg",
+    "description": "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and CI/CD implementations.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Denver",
+      "addressRegion": "CO",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/automatedascent/",
+      "https://github.com/bmuschko/"
+    ]
+  }
+  </script>
+
   <!-- PLUGINS CSS STYLE -->
   <!-- Bootstrap -->
   <link href="{{ "plugins/bootstrap/css/bootstrap.min.css" | absURL }}" rel="stylesheet">
-  <!-- Themefisher Font -->  
+  <!-- Themefisher Font -->
   <link href="{{ "plugins/themefisher-font/style.css" | absURL }}" rel="stylesheet">
   <!-- Swiper Carousel -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
