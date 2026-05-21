@@ -1,16 +1,16 @@
 <nav class="navbar main-nav navbar-expand-lg p-0">
   <div class="container">
-      <a class="navbar-brand" href="/"><div class="logo"><img src="{{ "images/logo.svg" | absURL }}" alt="Automated Ascent - Software Consulting"></div></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="/"><div class="logo"><img src="{{ "images/logo.svg" | absURL }}" alt="Automated Ascent - Software Consulting" width="425" height="128"></div></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="tf-ion-android-menu"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         {{ $url := .RelPermalink }}
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown dropdown-slide{{ if in $url .URL }} active{{ end }}">
-              <a class="nav-link" href="{{ .URL }}" data-toggle="dropdown">{{ .Name }}
+              <a class="nav-link" href="{{ .URL }}" data-bs-toggle="dropdown">{{ .Name }}
                 <span><i class="tf-ion-ios-arrow-down"></i></span>
               </a>
               <div class="dropdown-menu">

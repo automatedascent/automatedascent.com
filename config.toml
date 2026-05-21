@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Automated Ascent"
 googleAnalytics = "G-0Y1P7L3C8R"
 
+[taxonomies]
+
 [minify]
   disableCSS = false
   disableHTML = false

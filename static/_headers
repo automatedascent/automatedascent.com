@@ -22,5 +22,9 @@
   # Enforce HTTPS
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
+  # Cross-Origin Isolation
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+
   # Feature Policy / Permissions Policy
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=()

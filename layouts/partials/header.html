@@ -17,14 +17,16 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and Continuous Integration/Continuous Delivery implementations. Expert consulting, training, and technical writing services." }}{{ end }}">
-  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo.svg">
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="{{ .Permalink }}">
   <meta property="twitter:title" content="{{ .Title }}">
   <meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description | default "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and Continuous Integration/Continuous Delivery implementations. Expert consulting, training, and technical writing services." }}{{ end }}">
-  <meta property="twitter:image" content="{{ .Site.BaseURL }}images/logo.svg">
+  <meta property="twitter:image" content="{{ .Site.BaseURL }}images/og-image.png">
   
   <!-- DNS PREFETCH & PRECONNECT -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -52,6 +54,42 @@
   <!-- FAVICON -->
   <link href="{{ "images/favicon.ico" | absURL }}" rel="shortcut icon">
   
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Automated Ascent",
+    "url": "https://automatedascent.com",
+    "logo": "https://automatedascent.com/images/logo.svg",
+    "description": "Automated Ascent specializes in cloud-native application development, container solutions, DevSecOps, and CI/CD implementations.",
+    "founder": {
+      "@type": "Person",
+      "name": "Benjamin Muschko",
+      "jobTitle": "Founder",
+      "sameAs": [
+        "https://github.com/bmuschko",
+        "https://www.linkedin.com/in/benjaminmuschko/",
+        "https://bmuschko.com"
+      ]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Denver",
+      "addressRegion": "CO",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@automatedascent.com",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/automatedascent/"
+    ]
+  }
+  </script>
+
   {{ if ne (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
     {{ template "_internal/google_analytics.html" . }}
   {{ end }}
