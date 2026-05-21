@@ -5,7 +5,7 @@
 
 /*
   # Content Security Policy - Prevents XSS attacks
-  Content-Security-Policy: default-src 'self'; script-src 'self' cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' app.99inbound.com https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' cdn.jsdelivr.net fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' app.99inbound.com https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 
   # Prevent browsers from incorrectly detecting non-scripts as scripts
   X-Content-Type-Options: nosniff

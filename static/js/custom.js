@@ -78,8 +78,16 @@
         //  Video Replace
         // -----------------------------
         $('.video-box i').click(function() {
-            var video = '<iframe allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
-            $(this).replaceWith(video);
+            var videoUrl = $(this).attr('data-video');
+            try {
+                var parsed = new URL(videoUrl);
+                if (parsed.protocol !== 'https:') return;
+                if (!['www.youtube.com', 'youtube.com', 'www.youtube-nocookie.com', 'player.vimeo.com'].includes(parsed.hostname)) return;
+            } catch (e) { return; }
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('src', videoUrl);
+            $(this).replaceWith(iframe);
         });
 
         // -----------------------------
