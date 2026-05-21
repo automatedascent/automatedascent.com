@@ -2811,13 +2811,3 @@ a:focus, a:hover {
   width: 60px;
   height: auto;
 }
-
-/* Contact form utilities */
-.honeypot-field {
-  position: absolute;
-  left: -5000px;
-}
-
-.alert-hidden {
-  display: none;
-}
