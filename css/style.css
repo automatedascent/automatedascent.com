@@ -1,5 +1,5 @@
 /*=== MEDIA QUERY ===*/
-/* Google Fonts loaded via <link> in header.html for non-blocking rendering */
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800");
 
 :root {
   --primary-blue: #2e7eed;
@@ -2810,4 +2810,14 @@ a:focus, a:hover {
 .badge-medium {
   width: 60px;
   height: auto;
+}
+
+/* Contact form utilities */
+.honeypot-field {
+  position: absolute;
+  left: -5000px;
+}
+
+.alert-hidden {
+  display: none;
 }
